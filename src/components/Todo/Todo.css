@@ -1,0 +1,41 @@
+
+.flex{
+  width: 80%;
+  background: #574a9a;
+
+
+  
+  
+}
+.tdd{
+  border-collapse: collapse;
+  text-align: center;
+}
+.name{
+  width:55%
+}
+.tel{
+  width: 45%;
+}
+
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.del{
+  cursor: pointer;
+  color: red;
+ font-size: 25px;
+}
+
+
+  tbody{
+    background-color: white;
+    color: #574a9a;
+    font-size: 20px;
+  }
