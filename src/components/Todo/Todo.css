@@ -33,9 +33,43 @@
  font-size: 25px;
 }
 
-
   tbody{
     background-color: white;
     color: #574a9a;
     font-size: 20px;
   }
+
+
+  @media(max-width:540px){
+
+    
+    .width{
+      max-width:312px ;
+      overflow-x: scroll;
+    }
+      }
+
+
+
+
+
+
+
+  @media(max-width:420px){
+
+    
+.width{
+  max-width:179px ;
+  overflow-x: scroll;
+}
+  }
+  
+
+  @media(max-width:280px){
+
+    
+    .width{
+      max-width:113px ;
+      overflow-x: scroll;
+    }
+      }
