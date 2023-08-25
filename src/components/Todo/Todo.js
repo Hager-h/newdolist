@@ -3,8 +3,7 @@ import "./Todo.css"
 export default function Todo(props) {
 
 const{items,deleteitems}=props
-const listItems=
-items.map(item=>{    
+const listItems=items.map(item =>{    
   if(item.name.length!==0&&item.num.length!==0&&item.id.length!==0){
      return(<tr key={Math.random()}>
 
@@ -14,10 +13,11 @@ items.map(item=>{
 
 x      </td>
       </tr>
-      )
-
+     )
   }
-})
+}
+)
+
 
 
   return (
