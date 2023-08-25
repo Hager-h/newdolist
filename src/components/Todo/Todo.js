@@ -1,23 +1,22 @@
-import React  from 'react'
+import React from 'react'
 import "./Todo.css"
 export default function Todo(props) {
+  const{items,deleteitems}=props
 
-const{items,deleteitems}=props
-const listItems=items.map(item =>{    
-  if(item.name.length!==0&&item.num.length!==0&&item.id.length!==0){
-     return(<tr key={Math.random()}>
-
+  const listItems=items.map(item =>{
+    if(item.name.length!==0&&item.num.length!==0&&item.id.length!==0){
+    return(
+    <tr key={Math.random()}>
     <td className="width">{item.name}</td>
-      <td className="width">{item.num}</td>
-      <td  className="del"onClick={()=>deleteitems(item.id)}>
-
-x      </td>
-      </tr>
-     )
-  }
-}
-)
-
+    <td className="width">{item.num}</td>
+    <td  className="del"onClick={()=>deleteitems(item.id)}>
+    x
+    </td>
+    </tr>
+    )
+    }
+    return null;
+    })
 
 
   return (
